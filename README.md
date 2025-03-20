@@ -1,62 +1,16 @@
 
-# Presentation Template
+# Airborne-Laserscanning in Deutschland: Verfügbarkeiten, Herausforderungen, Potenziale
 
-This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows (only works in Public Repositories).
+**Zusammenfassung**
 
+Airborne-Laserscanning (ALS)-Daten werden in Deutschland großflächig durch die Bundesländer erhoben. Trotz einer Entwicklung hin zu mehr Open Access bestehen weiterhin Hürden aufgrund uneinheitlicher Datenqualität, Verfügbarkeit und Zugangsregelungen. Der Vortrag gibt einen Überblick über die Verfügbarkeit von ALS-Daten in Deutschland, zeigt bestehende Probleme bei der Datennutzung auf und diskutiert Strategien für eine verbesserte Bereitstellung.
 
-### Get startet
+--- 
 
-The following files contain sample code (including variables such as website), please edit / replace the content:
-- `presentation.qmd` (main file to add content for presentation) 
-- `references.bib` (optionally, add references to be included)
-- `_quarto.yml` (main file to change presentation settings)
-- `_variables.yml` (optionally, add variables to be added in .qmd)
+**Beschreibung**
 
+Airborne-Laserscanning (ALS)-Daten sind für zahlreiche Anwendungsbereiche in Forschung und Entwicklung von großem Wert, da sie detaillierte Informationen zur dreidimensionalen Struktur von Landschaften liefern. Aus diesen Daten lassen sich hochpräzise Gelände- und Oberflächenmodelle erstellen, die beispielsweise zur Berechnung von Wasserabflüssen oder zur Schätzung der Holzbiomasse genutzt werden. Die Punktwolken liefern weitere Informationen, etwa wie die vertikale Bestandesstruktur zwischen Baumkronen und Boden aufbaut ist.
 
-Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
+In Deutschland werden flächendeckende ALS-Kampagnen von den einzelnen Bundesländern und neuerdings auch vom Bund durchgeführt, jedoch ist die großflächige Nutzung dieser Daten nach wie vor mit Hürden verbunden. Während der Zugang in der Vergangenheit stark eingeschränkt war, zeigt sich zwar zunehmend ein Wandel hin zu mehr Open Access, die föderale Struktur führt allerdings weiterhin zu heterogenen Datenqualitäten, Verfügbarkeiten und Zugangsregelungen.
 
-#### References
-
-References can be manually inserted in the `references.bib` file and cited via their key (e.g. `[@Wiesehahn_2023]`. 
-
-Alternatively references can be managed within Zotero and synchronized with the `references.bib`,  plugins such as the *Citation Picker for Zotero* in VS Code help to insert citations (e.g. via `alt`+`shift`+`z`).
-
-https://quarto.org/docs/authoring/footnotes-and-citations.html
-
-
-### Pre-installed extensions
-
-#### [Quarto social embeds](https://github.com/sellorm/quarto-social-embeds)
-
-Use to embed GitHub gists, Twitter, Youtube, Vimeo, Mastodon, e.g.:
-`{{< gist wiesehahn 6b6c215c227341f4faab03ff96fa7f1b >}}`
-
-#### [Attribution](https://github.com/quarto-ext/attribution)
-
-Use to display attribution text sideways, e.g.:
-```r
-::: {.attribution}
-by [@Jens Wiesehahn](https://wiesehahn.github.io/)
-:::
-```
-
-#### [Lightbox](https://github.com/quarto-ext/lightbox)
-
-Use to add lightbox styling and behavior to images in HTML documents, e.g.:
-
-`![logo](images/triangle_logo.png){.lightbox}`
-
-#### [Verticator](https://github.com/Martinomagnifico/quarto-verticator)
-
-Adds indicators to show the amount of slides in a vertical stack.
-
-#### [Qrcode Extension for Quarto](https://github.com/jmbuhr/quarto-qrcode)
-
-Provides shortcodes for qrcodejs in quarto, e.g.:
-
-`{{< qrcode https://github.com/jmbuhr/quarto-qrcode >}}`
-
-#### [Iconify](https://github.com/mcanouil/quarto-iconify)
-
-provides support to free and open source icons provided by [Iconify](https://icon-sets.iconify.design/), e.g.:
-`{{< iconify typcn plus >}}`
+Die Präsentation führt in die Welt der Lidar-Daten ein: Wie werden sie erfasst, welche Standards existieren, und mit welchen Tools lassen sich die Daten verarbeiten? Der Schwerpunkt liegt auf der aktuellen Verfügbarkeit von ALS-Daten in Deutschland. Dazu wurde eine umfassende Recherche in Geoportalen, Social Media, persönlichem Mailverkehr etc. durchgeführt. Die Verfügbarkeit und Zugänglichkeit in den einzelnen Bundesländern wird dargestellt und im internationalen Kontext betrachtet. Es wird aufgezeigt, welche spezifischen Daten vorhanden sind, wie sie bereitgestellt werden und unter welchen Lizenzen sie stehen. Möglichkeiten und Herausforderungen bei der Arbeit mit ALS-Daten werden aus der Perspektive der Nutzenden beleuchtet, und es werden offene Fragen sowie potenzielle Strategien für eine verbesserte Datenbereitstellung diskutiert.
