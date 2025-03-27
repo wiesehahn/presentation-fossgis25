@@ -1,5 +1,5 @@
 # <!-- EXAMPLE CONTENT - EDIT / REPLACE BELOW -->
-title: "Airborne-Laserscanning in Deutschland"
+title: "{{< var website-title >}}"
 subtitle: "Verfügbarkeiten, Herausforderungen, Potenziale"
 author: "Jens Wiesehahn"
 institute: "Nordwestdeutsche Forstliche Versuchsanstalt" 
@@ -8,7 +8,6 @@ project:
     type: website
 
 website:
-    title: "{{< var website-title >}}"
     description: "{{< var website-description >}}"
     site-url: "{{< var website-url >}}"
     repo-url: "{{< var repository-url >}}"

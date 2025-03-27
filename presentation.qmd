@@ -155,26 +155,22 @@ DVO-HVD:
 
 |                 | DGM                | DOM                | Punktwolke         | Kampagnen                                                            |
 |-------------------------------|--------------------|--------------------|---------------------|------------------------------------------------------------------------|
-| [Baden-Württemberg](#baden-württemberg)             | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::black_circle::radio_button:                             |
-| [Bayern](#bavaria)                       | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
-| [Berlin](#berlin)                        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle:                                                         |
-| [Brandenburg](#brandenburg)                   | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::radio_button:                                           |
-| [Bremen](#bremen)                        | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::black_circle:                                           |
-| [Hamburg](#hamburg)                       | :white_check_mark: | :x:                | :x:                 | :black_circle::black_circle::black_circle:                             |
-| [Hessen](#hesse)                         | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
-| [Niedersachsen](#lower-saxony)                  | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::radio_button:                                           |
-| [Mecklenburg-Vorpommern](#mecklenburg-western-pomerania) | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: |   :black_circle::radio_button: |
-| [Nordrhein-Westfalen](#north-rhine-westphalia)        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button::radio_button: |
-| [Rheinland-Pfalz](#rhineland-palatinate)          | :white_check_mark: | :x:                |  :heavy_dollar_sign: |   :black_circle::black_circle::radio_button:  |
-| [Saarland](#saarland)                      | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle:                                           |
-| [Sachsen](#saxony)                        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
-| [Sachsen-Anhalt](#saxony-anhalt)                 | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::radio_button:                                           |
-| [Schleswig-Holstein](#schleswig-holstein)            | :white_check_mark: | :x:                | :x:                 | :black_circle::radio_button:                                           |
-| [Thüringen](#thuringia)                     | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button:               |
-
-::: footer
-(keine Gewähr auf Vollständigkeit oder Richtigkeit)
-:::
+| [Baden-Württemberg](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#baden-w%C3%BCrttemberg)             | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::black_circle::radio_button:                             |
+| [Bayern](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#bavaria)                       | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
+| [Berlin](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#berlin)                        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle:                                                         |
+| [Brandenburg](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#brandenburg)                   | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::radio_button:                                           |
+| [Bremen](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#bremen)                        | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::black_circle:                                           |
+| [Hamburg](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#hamburg)                       | :white_check_mark: | :x:                | :x:                 | :black_circle::black_circle::black_circle:                             |
+| [Hessen](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#hesse)                         | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
+| [Niedersachsen](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#lower-saxony)                  | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::radio_button:                                           |
+| [Mecklenburg-Vorpommern](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#mecklenburg-western-pomerania) | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: |   :black_circle::radio_button: |
+| [Nordrhein-Westfalen](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#north-rhine-westphalia)        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button::radio_button: |
+| [Rheinland-Pfalz](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#rhineland-palatinate)          | :white_check_mark: | :x:                |  :heavy_dollar_sign: |   :black_circle::black_circle::radio_button:  |
+| [Saarland](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#saarland)                      | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle:                                           |
+| [Sachsen](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#saxony)                        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
+| [Sachsen-Anhalt](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#saxony-anhalt)                 | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::radio_button:                                           |
+| [Schleswig-Holstein](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#schleswig-holstein)            | :white_check_mark: | :x:                | :x:                 | :black_circle::radio_button:                                           |
+| [Thüringen](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#thuringia)                     | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button:               |
 
 
 # Zukünftige Datenverfügbarkeit
@@ -190,14 +186,14 @@ DigiZ-DE Plattform / ALS-Daten
 - Bundesweite Befliegung in 2024/2025
 - Erfassung in Vegetationszeit (März-Oktober) 
 - Wiederholung (3-5 Jahre) ist anvisiert
-- Punktdichte >=40 pts/m²
+- Punktdichte >=40 Punkte/m²
 - gleichzeitige Erfassung von RGB-Daten
-- 1.5 PByte Daten
+- ca. 1.5 PByte Daten
 - primär für Bundeseinrichtungen
-- Punktwolke (10 points/m²) als Open Data ab 2027
+- Punktwolke (10 Punkte/m²) als Open Data ab 2027
 
 
-# Herausforderungen und Pozenziale
+# Zukünftige Datenverfügbarkeit
 
 <br>
 
@@ -212,7 +208,8 @@ DigiZ-DE Plattform / ALS-Daten
 - Datenbezug umständlich  
   (API? Massendownload?)
 - kein einheitlicher Datenzugang  
-  ([Your Geoportal F***ing Sucks](https://video.osgeo.org/w/rcjXvWo7mJ2bBguT1N7Jnr))
+  ([Your Geoportal F***ing Sucks](https://video.osgeo.org/w/rcjXvWo7mJ2bBguT1N7Jnr),  
+  [Eine Reise durch die Geoportale Deutschlands](https://pretalx.com/fossgis2025/talk/LKLHWU/))
 - uneinheitliche Daten
 - unvollständige Daten  
   (ausgedünnte Punktwolken, nur Teilbereiche verfügbar, keine historischen Daten)
@@ -255,7 +252,7 @@ Airborne Laserscanning-Daten in Deutschland
 <br>
 
 **Detailliertere Informationen unter:**
-[https://github.com/wiesehahn/lidar-availability]()
+[github.com/wiesehahn/lidar-availability](https://github.com/wiesehahn/lidar-availability)
 
 <br>
 
@@ -286,26 +283,21 @@ Prsentation online unter:
   - Wiederholungen ("keine Aktualitätszyklen definiert" vs. "Grundaktualität von 10 Jahren")
 
 
-# Entwicklung der Datenverfügbarkeit  {visibility="uncounted"}
+# Open Data seit  {visibility="uncounted"}
 
 <br>
 
-- 1990er: erste Lidar-Befliegungen
-- 2000er: flächendeckende Befliegungen
-- 2010er: wiederholte Befliegungen
-- 2017: NW, TH Open Data
-- 2019: SN Open Data
-- 2021: BB, BE Open Data
-- 2022: HE Open Data
-- 2023: ST Open Data
-- 2024: BY, SL Open Data
+- 2012: Finnland
+- 2013: Dänemark
+- 2014: Niederlande
+- 2015: England
+- 2017: NW, TH 
+- 2019: SN 
+- 2021: BB, BE 
+- 2022: HE 
+- 2023: ST 
+- 2024: BY, SL
+- 2027: Deutschland (BKG) ???
 
-<br>
-
-::: {.highlight-color-pink }
-- kürzere Zyklen
-- höhere Punktdichten
-- mehr Open Data
-:::
 
 #  {visibility="uncounted"}
