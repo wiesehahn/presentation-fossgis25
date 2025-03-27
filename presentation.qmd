@@ -1,436 +1,252 @@
 
-<!-- EXAMPLE CONTENT - EDIT / REPLACE BELOW -->
+# Was sind Lidar-Daten?
 
-# Slide 1.1
+---
+from: markdown+emoji
+---
 
-![Alternative image text](images/triangle_logo.png){.lightbox}
+<br>
 
-## Slide 1.2
+:::: {.columns}
 
+::: {.column width="50%"}
 
-# Quarto syntax examples
-
-## Attribution
-
-With the [Attribution extension](https://github.com/quarto-ext/attribution) we can display attributions on the right side.
-
-```markdown
-::: {.attribution}
-by [Jens Wiesehahn](https://wiesehahn.github.io/)
-:::
-```
-
-::: {.attribution}
-by [Jens Wiesehahn](https://wiesehahn.github.io/)
+- aktives System
+  - misst Entfernung zum Sensor
+  - Millionen von Signalen pro Sekunde
+- erzeugt Punktwolke 
+  - X,Y,Z
+  - (+ Klasse, Intensität, Zeitstempel, ...)
+  - Format: LAS/LAZ
 :::
 
+::: {.column width="50%"}
 
-## Reference & Footer
-
-``` markdown                            
-Lets insert a reference at the end of a sentence [@Wiesehahn_2023]. 
-```
-Lets insert a reference at the end of a sentence [@Wiesehahn_2023]. 
+::: {.r-stack}
+![](/images/als_function_1.gif){.fragment width=1000 fragment-index=1 .fade-in-then-out}
 
 
-``` markdown                            
-@Wiesehahn_2023 inserts an inline reference.
-```
-@Wiesehahn_2023 inserts an inline reference.
-
-
-
-The reference list is added at the end of the document, or can be added via 
-```markdown
-::: {#refs}
+![](/images/als_function_2.gif){.fragment width=1000 fragment-index=2 .fade-in-then-out}
 :::
 
-```
+:::
 
-To insert a footer use:
+::::
 
 
-``` markdown                            
+## abgeleitete Produkte
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+**Oberfläche** 
+
+= Digitales Oberflächenmodell  
+(DOM / DSM) 
+
+<br>
+
+**Gelände** 
+
+= Digitales Geländemodell  
+(DGM / DTM) 
+
+<br>
+
+**normalisierte Oberfläche**
+
+= normalisiertes Oberfllächenmodell  
+(nDOM / nDSM /CHM)
+
+<br>
+
+:::{.fragment fragment-index=1}
+**3D-Struktur** 
+
+= Diverse Möglichkeiten
+
+:::
+
+:::
+
+::: {.column width="50%"}
+![](https://www.spiedigitallibrary.org/ContentImages/Journals/JARSC4/10/3/036013/FigureImages/JARS_10_3_036013_f003.png)
+
+<br>
+
+![](images/baum_schillerwiesen.gif){.fragment fragment-index=1}
+:::
+
+::::
+
+
+
+# Verfügbarkeit
+
+## Wie werden die Daten erfasst?
+
+<br>
+
+- Bundesländer sind zuständig für die Erfassung
+- AdV (Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder) regelt Standardisierung 
+- [3D-Messdaten Standard](https://www.adv-online.de/AdV-Produkte/Standards-und-Produktblaetter/Standards-der-Geotopographie/binarywriterservlet?imgUid=6b510f6e-a708-d081-505a-20954cd298e1&uBasVariant=11111111-1111-1111-1111-111111111111)
+  - Datenformat (LAS 1.2ff; Point Data Record Format 1/3/7)
+  - Benennung (3dm_utm-zone_east_north_kantenlaenge_land_jahr)
+  - Metadaten (AKtualität: JJJJ-MM)
+  - Aufnahmezeit (November – März)
+  - Wiederholungen ("keine Aktualitätszyklen definiert" vs. "Grundaktualität von 10 Jahren")
+
+::: {.notes}
+- DGM Standard
+  - Grundaktualität von 10 Jahren
+  - 1x1km Kacheln
+  - Datenformat (GeoTIIF)
+  - Benennung (dgm<rasterweite>_<utm-zone>_<east>_<north>_<kantenlaenge>_<land>_<jahr>.tif)
+  - Metadaten
+  - Qualitätsstandards
+:::
+
 ::: footer
-Custom footer text
-:::
-```
-::: footer
-Custom footer text
+(keine Gewähr auf Vollständigkeit oder Richtigkeit)
 :::
 
+## Entwicklung der Datenerfassung {transition="fade" auto-animate=true}
 
+<br>
 
-## Text Formatting
+- 1990er: erste Lidar-Befliegungen (< 0.1 Punkt/m²)
+- 2000er: flächendeckende Befliegungen (1-4 Punkte/m²)
+- 2010er: wiederholte Befliegungen (> 4 Punkte/m²)
 
-+-----------------------------------------+-----------------------------------------+
-| Markdown Syntax                         | Output                                  |
-+=========================================+=========================================+
-| ``` markdown                            | *italics*, **bold**, ***bold italics*** |
-| *italics*, **bold**, ***bold italics*** |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
-| ``` markdown                            | superscript^2^ / subscript~2~           |
-| superscript^2^ / subscript~2~           |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
-| ``` markdown                            | ~~strikethrough~~                       |
-| ~~strikethrough~~                       |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
-| ``` markdown                            | `verbatim code`                         |
-| `verbatim code`                         |                                         |
-| ```                                     |                                         |
-+-----------------------------------------+-----------------------------------------+
+<br>
 
-## Headings
-
-+-----------------+-----------------------------------+
-| Markdown Syntax | Output                            |
-+=================+===================================+
-| ``` markdown    | # Header 1 {.heading-output}      |
-| # Header 1      |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ## Header 2 {.heading-output}     |
-| ## Header 2     |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ### Header 3 {.heading-output}    |
-| ### Header 3    |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | #### Header 4 {.heading-output}   |
-| #### Header 4   |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ##### Header 5 {.heading-output}  |
-| ##### Header 5  |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-| ``` markdown    | ###### Header 6 {.heading-output} |
-| ###### Header 6 |                                   |
-| ```             |                                   |
-+-----------------+-----------------------------------+
-
-
-## Links & Images
-
-``` markdown                                                                                                                                     
-<https://quarto.org>                                                                                                                                                 
-```
-<https://quarto.org>
-
-
-``` markdown
-[Quarto](https://quarto.org)
-```
-[Quarto](https://quarto.org)           
-
-
-``` markdown
-![Caption](/images/triangle_logo.png)
-```
-![Caption](/images/triangle_logo.png){fig-alt="Logo image"}  
-
-
-``` markdown                                                                             
-[![Caption](/images/triangle_logo.png)](https://quarto.org)
-```
-[![Caption](/images/triangle_logo.png)](https://quarto.org)    
-
-
-``` markdown                                                  
-[![Caption](/images/triangle_logo.png)](https://quarto.org " Logo image")
-```
-[![Caption](/images/triangle_logo.png " Logo image"){fig-alt="Logo image."}](https://quarto.org) 
-
-
-``` markdown                                                             
-[![](/images/triangle_logo.png){fig-alt="Alt text"}](https://quarto.org)
-```
-[![](/images/triangle_logo.png){fig-alt="Logo image."}](https://quarto.org)          
-
-
-## Lists {.scrollable}
-
-+-----------------------------------+---------------------------------+
-| Markdown Syntax                   | Output                          |
-+===================================+=================================+
-| ``` markdown                      |                                 |
-| * unordered list                  | * unordered list                |
-|     + sub-item 1                  |     + sub-item 1                |
-|     + sub-item 2                  |     + sub-item 2                |
-|         - sub-sub-item 1          |         - sub-sub-item 1        |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| *   item 2                        | -   item 2                      |
-|                                   |                                 |
-|     Continued (indent 4 spaces)   |     Continued (indent 4 spaces) |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| 1. ordered list                   |  1. ordered list                |
-| 2. item 2                         |  2. item 2                      |
-|     i) sub-item 1                 |      i) sub-item 1              |
-|          A.  sub-sub-item 1       |           A.  sub-sub-item 1    |
-| ```                               |                                 |
-|                                   |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| (@)  A list whose numbering       |  (1) A list whose numbering     |
-|                                   |                                 |
-| continues after                   |  continues after                |
-|                                   |                                 |
-| (@)  an interruption              |  (2) an interruption            |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| ::: {}                            | ::: {}                          |
-| 1. A list                         | 1. A list                       |
-| :::                               | :::                             |
-|                                   |                                 |
-| ::: {}                            | ::: {}                          |
-| 1. Followed by another list       | 1. Followed by another list     |
-| :::                               | :::                             |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| term                              | term                            |
-| : definition                      | : definition                    |
-| ```                               |                                 |
-+-----------------------------------+---------------------------------+
-
-Note that unlike other Markdown renderers (notably Jupyter and GitHub), lists in Quarto require an entire blank line above the list. Otherwise the list will not be rendered in list form, rather it will all appear as normal text along a single line.
-
-
-
-## Tables
-
-#### Markdown Syntax
-
-``` markdown
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|   12  |  12  |    12   |    12  |
-|  123  |  123 |   123   |   123  |
-|    1  |    1 |     1   |     1  |
-```
-
-#### Output
-
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|    12 | 12   | 12      |   12   |
-|   123 | 123  | 123     |  123   |
-|     1 | 1    | 1       |   1    |
-
-
-
-## Source Code {.scrollable}
-
-Use ```` ``` ```` to delimit blocks of source code:
-
-Add a language to syntax highlight code blocks:
-
-```` markdown
-```python
-1 + 1
-```
-````
-
-Pandoc supports syntax highlighting for over [140 different languages](https://github.com/jgm/skylighting/tree/master/skylighting-core/xml). If your language is not supported then you can use the `default` language to get a similar visual treatment:
-
-```` markdown
-```default
-code
-```
-````
-
-
-Naming code blocks like
-
-````markdown
-```{.r filename="script.r"}
-1+1
-```
-````
-gives
-
-````{.r filename="script.r"}
-1+1
-````
-
-
-Highlight certain lines with e.g. `{.python code-line-numbers="6-8"}`
-
-```{.python code-line-numbers="6-8"}
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
-
-
-You can collapse code with 
-```markdown 
-#| code-fold: true
-#| code-summary: "Code"
-```
-
-````{.r}
-#| code-fold: true
-#| code-summary: "Code"
-
-1+1
-````  
-
-
-
-## Equations
-
-Use `$` delimiters for inline math and `$$` delimiters for display math. For example:
-
-+---------------------------+-------------------------+
-| Markdown Syntax           | Output                  |
-+===========================+=========================+
-| ``` markdown              |                         |
-| inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
-| ```                       |                         |
-+---------------------------+-------------------------+
-| ``` markdown              |                         |
-| display math:             | display math:           |
-|                           |                         |
-| $$E = mc^{2}$$            | $$E = mc^{2}$$          |
-| ```                       |                         |
-+---------------------------+-------------------------+
-
-
-## Diagrams
-
-Quarto has native support for embedding [Mermaid](https://mermaid-js.github.io/mermaid/#/) and [Graphviz](https://graphviz.org/) diagrams. This enables you to create flowcharts, sequence diagrams, state diagrams, Gantt charts, and more using a plain text syntax inspired by markdown.
-
-For example, here we embed a flowchart created using Mermaid:
-
-```{mermaid}
-%%| echo: fenced
-flowchart LR
-    A[Hard edge] --> B(Round edge)
-    B --> C{Decision}
-    C --> D[Result one]
-    C --> E[Result two]
-```
-
-
-## Videos
-
-You can include videos in documents using the `{{{< video >}}}` shortcode. For example, here we embed a YouTube video:
-
-``` {.markdown shortcodes="false"}
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
-```
-
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
-
-
-
-## Divs and Spans
-
-You can add classes, attributes, and other identifiers to regions of content using Divs and Spans (you'll see an example of this below in [Callout Blocks]).
-
-For example, here we add the "border" class to a region of content using a div (`:::`):
-
-``` markdown
-::: {.second-color}
-This content can be styled with a border
-:::
-```
-
-::: {.second-color}
-This content can be styled with a border
+::: {.highlight-color-pink }
+- kürzere Zyklen
+- höhere Punktdichten
 :::
 
 
-``` markdown
-[This is *some text*]{.third-color}
-```
+## Entwicklung der Datenverfügbarkeit {transition="fade" auto-animate=true}
 
-[This is *some text*]{.third-color}
+<br>
 
+- 1990er: erste Lidar-Befliegungen 
+- 2000er: flächendeckende Befliegungen
+- 2010er: wiederholte Befliegungen
+- 2017: NW, TH Open Data
+- 2019: SN Open Data
+- 2021: BB, BE Open Data
+- 2022: HE Open Data
+- 2023: ST Open Data
+- 2024: BY, SL Open Data
 
-## Callout Blocks
+<br>
 
-#### Markdown Syntax
-
-``` markdown
-:::{.callout-note}
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
-:::
-```
-
-#### Output
-
-::: callout-note
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
-:::
-
-::: callout-tip
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
-:::
-
-::: callout-warning
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
-:::
-
-::: callout-caution
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
-:::
-
-::: callout-important
-Note that there are five types of callouts, including `note`, `tip`, `warning`, `caution`, and `important`.
+::: {.highlight-color-pink }
+- kürzere Zyklen
+- höhere Punktdichten
+- mehr Open Data
 :::
 
 
-## Other Blocks
 
-+--------------------------+--------------------------+
-| Markdown Syntax          | Output                   |
-+==========================+==========================+
-| ``` markdown             | > Blockquote             |
-| > Blockquote             |                          |
-| ```                      |                          |
-+--------------------------+--------------------------+
-| ``` markdown             | ::: classname            |
-| ::: {.classname}         | Div                      |
-| Div                      | :::                      |
-| :::                      |                          |
-| ```                      |                          |
-+--------------------------+--------------------------+
-| ``` markdown             | | Line Block             |
-| | Line Block             | |    Spaces and newlines |
-| |   Spaces and newlines  | |    are preserved       |
-| |   are preserved        |                          |
-| ```                      |                          |
-+--------------------------+--------------------------+
+## Aktuelle Datenverfügbarkeit
 
-# Final Slide
+|                 | DGM                | DOM                | Punktwolke         | Kampagnen                                                            |
+|-------------------------------|--------------------|--------------------|---------------------|------------------------------------------------------------------------|
+| [Baden-Württemberg](#baden-württemberg)             | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::black_circle::radio_button:                             |
+| [Bayern](#bavaria)                       | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
+| [Berlin](#berlin)                        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle:                                                         |
+| [Brandenburg](#brandenburg)                   | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::radio_button:                                           |
+| [Bremen](#bremen)                        | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::black_circle:                                           |
+| [Hamburg](#hamburg)                       | :white_check_mark: | :x:                | :x:                 | :black_circle::black_circle::black_circle:                             |
+| [Hessen](#hesse)                         | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
+| [Niedersachsen](#lower-saxony)                  | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: | :black_circle::radio_button:                                           |
+| [Mecklenburg-Vorpommern](#mecklenburg-western-pomerania) | :white_check_mark: | :white_check_mark: | :heavy_dollar_sign: |   :black_circle::radio_button: |
+| [Nordrhein-Westfalen](#north-rhine-westphalia)        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button::radio_button: |
+| [Rheinland-Pfalz](#rhineland-palatinate)          | :white_check_mark: | :x:                |  :heavy_dollar_sign: |   :black_circle::black_circle::radio_button:  |
+| [Saarland](#saarland)                      | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle:                                           |
+| [Sachsen](#saxony)                        | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::radio_button:                             |
+| [Sachsen-Anhalt](#saxony-anhalt)                 | :white_check_mark: | :x:                | :white_check_mark:  | :black_circle::radio_button:                                           |
+| [Schleswig-Holstein](#schleswig-holstein)            | :white_check_mark: | :x:                | :x:                 | :black_circle::radio_button:                                           |
+| [Thüringen](#thuringia)                     | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button:               |
+
+## Herausforderungen
+
+<br>
+
+- große Datenmengen
+- noch nicht alles Open Data
+- kein einheitlicher/zentraler Datenzugang 
+  (diverse Geoportale)
+- Datenbezug umständlich 
+  (kein Massendownload)
+- unvollständige Daten
+  - ausgedünnte Punktwolken
+  - nur Teilbereiche verfügbar
+- teils uneinheitliche Daten
+
+
+## Zukünftige Datenverfügbarkeit
+
+<br>
+
+### Digitaler Zwilling (BKG)
+
+<br>
+
+DigiZ-DE Plattform / ALS-Daten
+
+- Bundesweite Befliegung in 2024/2025
+- Erfassung in Vegetationszeit (März-Oktober) 
+- Wiederholung (3-5 Jahre) ist anvisiert
+- Punktdichte >=40 pts/m²
+- gleichzeitige Erfassung von RGB-Daten
+- 1.5 PByte Daten
+- primär für Bundeseinrichtungen
+- Punktwolke (10 points/m²) als Open Data ab 2027
+
+
+## Zukünftige Datenverfügbarkeit
+
+<br>
+
+### Potenziale
+
+<br>
+
+- Effiziente Datenverteilung
+  - Cloud Optimized Pointcloud (COPC)
+  - Virtual Point Cloud (VPC)
+  - Spatio Temporal Asset Catalog (STAC)
+- Webviewer 
+  (Beipiel https://usgs.entwine.io/)
+- Förderung durch Open Data und Open Source Software
+  (Beipiel https://ignf.github.io/myria3d/, https://forgemia.inra.fr/lidar/lidarHD)
+- 
+
+# Zusammenfassung
 
 <br>
 
 :::: {.columns}
 ::: {.column width="70%"}
+Airborne Laserscanning-Daten in Deutschland 
 
-some **conclusion** remarks
+1. [**zunehmend nutzbar (Open Data)**]{.highlight-color-pink}
+2. [**Datenbezug weiterhin kompliziert**]{.highlight-color-pink}
+3. [**Datenpotenzial noch lange nicht ausgeschöpft**]{.highlight-color-pink}
 
-- [nice presentation]{.highlight-color-pink}
+<br>
+
+<br>
+
+**Detailliertere Informationen unter:**
+[https://github.com/wiesehahn/lidar-availability]()
 
 <br>
 
@@ -441,20 +257,13 @@ some **conclusion** remarks
 :::
 
 ::: {.column width="30%"}
-Slides available at: 
+Prsentation online unter: 
 
 [{{< var website-name >}}]({{< var website-url >}})
 
 <br>
 
-{{< qrcode https://wiesehahn.github.io/quarto_presentation_template width=500 height=500 colorDark='#0011bb' >}}
+{{< qrcode https://wiesehahn.github.io/presentation-fossgis25 width=500 height=500 colorDark='#0011bb' >}}
 :::
 ::::
-
-
-
-# References {visibility="uncounted"}
-
-::: {#refs}
-:::
 

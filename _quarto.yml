@@ -1,6 +1,6 @@
 # <!-- EXAMPLE CONTENT - EDIT / REPLACE BELOW -->
-title: "Presentation"
-subtitle: "A template"
+title: "Airborne-Laserscanning in Deutschland"
+subtitle: "Verfügbarkeiten, Herausforderungen, Potenziale"
 author: "Jens Wiesehahn"
 # institute: 
 
@@ -20,10 +20,10 @@ format: # format options: https://quarto.org/docs/reference/formats/presentation
         width: 1600
         height: 1200
         margin: 0.15
-        #title-slide-attributes:
-        #    data-background-image: images/triangle_logo.png
-        #    data-background-size: cover
-        #    data-background-opacity: "1"
+        title-slide-attributes:
+            data-background-image: images/background.png
+            data-background-size: cover
+            data-background-opacity: "1"
         slide-number: c/t
         show-slide-number: speaker
         transition: slide
