@@ -15,9 +15,9 @@ from: markdown+emoji
   - misst Entfernung zum Sensor
   - Millionen von Signalen pro Sekunde
 - erzeugt Punktwolke 
-  - X,Y,Z
-  - (+ Klasse, Intensität, Zeitstempel, ...)
-  - Format: LAS/LAZ
+  - X,Y,Z Koordinate
+  - (+ Zeitstempel, Intensität, Klassifizierung ...)
+  - Standard-Format: LAS/LAZ
 :::
 
 ::: {.column width="50%"}
@@ -34,7 +34,7 @@ from: markdown+emoji
 ::::
 
 
-## abgeleitete Produkte
+# Aus Lidar abgeleitete Produkte
 
 <br>
 
@@ -83,42 +83,30 @@ from: markdown+emoji
 
 ::::
 
-
-
-# Verfügbarkeit
-
-## Wie werden die Daten erfasst?
+# Anwendungsbeispiele
 
 <br>
 
-- Bundesländer sind zuständig für die Erfassung
-- AdV (Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder) regelt Standardisierung 
-- [3D-Messdaten Standard](https://www.adv-online.de/AdV-Produkte/Standards-und-Produktblaetter/Standards-der-Geotopographie/binarywriterservlet?imgUid=6b510f6e-a708-d081-505a-20954cd298e1&uBasVariant=11111111-1111-1111-1111-111111111111)
-  - Datenformat (LAS 1.2ff; Point Data Record Format 1/3/7)
-  - Benennung (3dm_utm-zone_east_north_kantenlaenge_land_jahr)
-  - Metadaten (AKtualität: JJJJ-MM)
-  - Aufnahmezeit (November – März)
-  - Wiederholungen ("keine Aktualitätszyklen definiert" vs. "Grundaktualität von 10 Jahren")
+::: {.r-stack}
+[Hydrologie / Hochwassermodellieung]{.fragment fragment-index=1 .fade-out}
+![](images/hydrology.jpg){.fragment fragment-index=1 .fade-out}
 
-::: {.notes}
-- DGM Standard
-  - Grundaktualität von 10 Jahren
-  - 1x1km Kacheln
-  - Datenformat (GeoTIIF)
-  - Benennung (dgm<rasterweite>_<utm-zone>_<east>_<north>_<kantenlaenge>_<land>_<jahr>.tif)
-  - Metadaten
-  - Qualitätsstandards
+[Waldstruktur (Habitate, Biomasse, ...)]{.fragment fragment-index=1 .fade-in}
+![](images/forest_structure.jpg){.fragment  fragment-index=1 .fade-in}
 :::
 
-::: footer
-(keine Gewähr auf Vollständigkeit oder Richtigkeit)
-:::
 
-## Entwicklung der Datenerfassung {transition="fade" auto-animate=true}
+
+
+# Welche Daten gibt es?
 
 <br>
 
-- 1990er: erste Lidar-Befliegungen (< 0.1 Punkt/m²)
+- vor allem (flächendeckend) Daten der Landesvermessungsämter
+
+<br>
+
+- 1990er: erste Lidar-Befliegungen (< 0.1 Punkte/m²)
 - 2000er: flächendeckende Befliegungen (1-4 Punkte/m²)
 - 2010er: wiederholte Befliegungen (> 4 Punkte/m²)
 
@@ -129,32 +117,41 @@ from: markdown+emoji
 - höhere Punktdichten
 :::
 
-
-## Entwicklung der Datenverfügbarkeit {transition="fade" auto-animate=true}
-
-<br>
-
-- 1990er: erste Lidar-Befliegungen 
-- 2000er: flächendeckende Befliegungen
-- 2010er: wiederholte Befliegungen
-- 2017: NW, TH Open Data
-- 2019: SN Open Data
-- 2021: BB, BE Open Data
-- 2022: HE Open Data
-- 2023: ST Open Data
-- 2024: BY, SL Open Data
+. . .
 
 <br>
 
-::: {.highlight-color-pink }
-- kürzere Zyklen
-- höhere Punktdichten
-- mehr Open Data
-:::
+[**Werden die Lidar-Daten als Open Data bereitgestellt?**]{.highlight-color-pink}
 
 
+# Lidar-Daten als Open Data? {transition="fade" auto-animate=true}
 
-## Aktuelle Datenverfügbarkeit
+<br>
+
+@europeancommissionImpactAssessmentStudy2020:
+
+> Our findings have shown that the [inclusion of LIDAR point cloud]{.highlight-color-pink} data could be important, considering the related high value use-cases  
+> 
+> for any dataset that results from measurements or observations (e.g. LIDAR, ortho-imagery), the consensus is to [provide the data as completely as captured]{.highlight-color-pink} 
+
+
+DVO-HVD:
+
+> [Elevation]{.highlight-color-pink}
+> 
+> made available in machine-readable formats through APIs and bulk download  
+> 
+> Creative Commons BY 4.0 licence, or any equivalent or less restrictive open licence
+> 
+> most up-to-date datasets as well as historical version
+
+
+[GDI-DE Wiki](https://wiki.gdi-de.org/):
+
+> Die Bereitstellung sollte sich im Zweifel am Bedarf orientieren, d. h. in diesem Fall ist Bereitstellung der [abgeleiteten Produkte ausreichend]{.highlight-color-pink}
+
+
+# Aktuelle Datenverfügbarkeit
 
 |                 | DGM                | DOM                | Punktwolke         | Kampagnen                                                            |
 |-------------------------------|--------------------|--------------------|---------------------|------------------------------------------------------------------------|
@@ -175,27 +172,16 @@ from: markdown+emoji
 | [Schleswig-Holstein](#schleswig-holstein)            | :white_check_mark: | :x:                | :x:                 | :black_circle::radio_button:                                           |
 | [Thüringen](#thuringia)                     | :white_check_mark: | :white_check_mark: | :white_check_mark:  | :black_circle::black_circle::black_circle::radio_button:               |
 
-## Herausforderungen
+::: footer
+(keine Gewähr auf Vollständigkeit oder Richtigkeit)
+:::
+
+
+# Zukünftige Datenverfügbarkeit
 
 <br>
 
-- große Datenmengen
-- noch nicht alles Open Data
-- kein einheitlicher/zentraler Datenzugang 
-  (diverse Geoportale)
-- Datenbezug umständlich 
-  (kein Massendownload)
-- unvollständige Daten
-  - ausgedünnte Punktwolken
-  - nur Teilbereiche verfügbar
-- teils uneinheitliche Daten
-
-
-## Zukünftige Datenverfügbarkeit
-
-<br>
-
-### Digitaler Zwilling (BKG)
+**Digitaler Zwilling (BKG)**
 
 <br>
 
@@ -211,11 +197,29 @@ DigiZ-DE Plattform / ALS-Daten
 - Punktwolke (10 points/m²) als Open Data ab 2027
 
 
-## Zukünftige Datenverfügbarkeit
+# Herausforderungen und Pozenziale
 
 <br>
 
-### Potenziale
+:::: {.columns}
+::: {.column width="50%"}
+**Herausforderungen**
+
+<br>
+
+- große Datenmengen
+- noch nicht alles Open Data
+- Datenbezug umständlich  
+  (API? Massendownload?)
+- kein einheitlicher Datenzugang  
+  ([Your Geoportal F***ing Sucks](https://video.osgeo.org/w/rcjXvWo7mJ2bBguT1N7Jnr))
+- uneinheitliche Daten
+- unvollständige Daten  
+  (ausgedünnte Punktwolken, nur Teilbereiche verfügbar, keine historischen Daten)
+:::
+
+::: {.column width="50%"}
+**Potenziale**
 
 <br>
 
@@ -223,11 +227,16 @@ DigiZ-DE Plattform / ALS-Daten
   - Cloud Optimized Pointcloud (COPC)
   - Virtual Point Cloud (VPC)
   - Spatio Temporal Asset Catalog (STAC)
-- Webviewer 
-  (Beipiel https://usgs.entwine.io/)
-- Förderung durch Open Data und Open Source Software
-  (Beipiel https://ignf.github.io/myria3d/, https://forgemia.inra.fr/lidar/lidarHD)
-- 
+- Bessere UX durch Webviewer  
+  (z.B. [USGS Point Cloud Viewer](https://usgs.entwine.io/))
+- Bessere Nutzbarkeit durch zentrale Plattform
+- Förderung durch Open Data und FOSS  
+  (z.B. [Sementierung LIDAR HD](https://ignf.github.io/myria3d/) , [R-Paket LIDAR HD](https://forgemia.inra.fr/lidar/lidarHD))
+- zahlreiche Anwendungsfälle warten!
+
+:::
+::::
+
 
 # Zusammenfassung
 
@@ -267,3 +276,36 @@ Prsentation online unter:
 :::
 ::::
 
+# Standards  {visibility="uncounted"}
+
+- [3D-Messdaten Standard (AdV)](https://www.adv-online.de/AdV-Produkte/Standards-und-Produktblaetter/Standards-der-Geotopographie/binarywriterservlet?imgUid=6b510f6e-a708-d081-505a-20954cd298e1&uBasVariant=11111111-1111-1111-1111-111111111111)
+  - Datenformat (LAS 1.2ff; Point Data Record Format 1/3/7)
+  - Benennung (3dm_utm-zone_east_north_kantenlaenge_land_jahr)
+  - Metadaten (AKtualität: JJJJ-MM)
+  - Aufnahmezeit (November – März)
+  - Wiederholungen ("keine Aktualitätszyklen definiert" vs. "Grundaktualität von 10 Jahren")
+
+
+# Entwicklung der Datenverfügbarkeit  {visibility="uncounted"}
+
+<br>
+
+- 1990er: erste Lidar-Befliegungen
+- 2000er: flächendeckende Befliegungen
+- 2010er: wiederholte Befliegungen
+- 2017: NW, TH Open Data
+- 2019: SN Open Data
+- 2021: BB, BE Open Data
+- 2022: HE Open Data
+- 2023: ST Open Data
+- 2024: BY, SL Open Data
+
+<br>
+
+::: {.highlight-color-pink }
+- kürzere Zyklen
+- höhere Punktdichten
+- mehr Open Data
+:::
+
+#  {visibility="uncounted"}
