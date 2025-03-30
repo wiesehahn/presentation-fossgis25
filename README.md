@@ -1,6 +1,9 @@
 
 # Airborne-Laserscanning in Deutschland: Verfügbarkeiten, Herausforderungen, Potenziale
 
+- [video recording](https://media.ccc.de/v/fossgis2025-58287-airborne-laserscanning-in-deutschland-verfugbarkeiten-herausforderungen-potenziale)
+- [slides](https://wiesehahn.github.io/presentation-fossgis25/presentation.html)
+
 **Zusammenfassung**
 
 Airborne-Laserscanning (ALS)-Daten werden in Deutschland großflächig durch die Bundesländer erhoben. Trotz einer Entwicklung hin zu mehr Open Access bestehen weiterhin Hürden aufgrund uneinheitlicher Datenqualität, Verfügbarkeit und Zugangsregelungen. Der Vortrag gibt einen Überblick über die Verfügbarkeit von ALS-Daten in Deutschland, zeigt bestehende Probleme bei der Datennutzung auf und diskutiert Strategien für eine verbesserte Bereitstellung.
