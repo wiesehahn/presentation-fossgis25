@@ -1,23 +1,25 @@
 
 # Airborne-Laserscanning in Deutschland: Verfügbarkeiten, Herausforderungen, Potenziale
 
-*(Presentation at FOSSGIS-2025 in Münster, Germany)*
+*(Presented at FOSSGIS conference 2025 in Münster, Germany)*
 
+##### Keywords:
+**Airborne Laser Scanning**, **Data Availability**, **Open Data**, **Remote Sensing**
 
 [![video recording](https://img.shields.io/badge/Video%20Recording-373b38?logo=youtube)](https://media.ccc.de/v/fossgis2025-58287-airborne-laserscanning-in-deutschland-verfugbarkeiten-herausforderungen-potenziale)  [![presentation slides](https://img.shields.io/badge/Presentation%20Slides-373b38?logo=revealdotjs&logoColor=white)](https://wiesehahn.github.io/presentation-fossgis25/presentation.html)
 
 
-**Abstract**
+#### Abstract
 
 Airborne laser scanning (ALS) data in Germany is collected on a large scale by the federal states. Despite a development towards more open access, there are still hurdles due to inconsistent data quality, availability and access regulations. This presentation provides an overview of the availability of ALS data in Germany, highlights persisting problems and discusses strategies for improved data provision.
 
-**Zusammenfassung**
+#### Zusammenfassung
 
 Airborne-Laserscanning (ALS)-Daten werden in Deutschland großflächig durch die Bundesländer erhoben. Trotz einer Entwicklung hin zu mehr Open Access bestehen weiterhin Hürden aufgrund uneinheitlicher Datenqualität, Verfügbarkeit und Zugangsregelungen. Der Vortrag gibt einen Überblick über die Verfügbarkeit von ALS-Daten in Deutschland, zeigt bestehende Probleme bei der Datennutzung auf und diskutiert Strategien für eine verbesserte Bereitstellung.
 
 --- 
 
-**Beschreibung**
+#### Beschreibung
 
 Airborne-Laserscanning (ALS)-Daten sind für zahlreiche Anwendungsbereiche in Forschung und Entwicklung von großem Wert, da sie detaillierte Informationen zur dreidimensionalen Struktur von Landschaften liefern. Aus diesen Daten lassen sich hochpräzise Gelände- und Oberflächenmodelle erstellen, die beispielsweise zur Berechnung von Wasserabflüssen oder zur Schätzung der Holzbiomasse genutzt werden. Die Punktwolken liefern weitere Informationen, etwa wie die vertikale Bestandesstruktur zwischen Baumkronen und Boden aufbaut ist.
 
