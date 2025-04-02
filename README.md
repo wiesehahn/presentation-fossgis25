@@ -6,7 +6,7 @@
 ##### Keywords:
 **Airborne Laser Scanning**, **Data Availability**, **Open Data**, **Remote Sensing**
 
-[![video recording](https://img.shields.io/badge/Video%20Recording-373b38?logo=youtube)](https://media.ccc.de/v/fossgis2025-58287-airborne-laserscanning-in-deutschland-verfugbarkeiten-herausforderungen-potenziale)  [![presentation slides](https://img.shields.io/badge/Presentation%20Slides-373b38?logo=revealdotjs&logoColor=white)](https://wiesehahn.github.io/presentation-fossgis25/presentation.html)
+[![DOI](https://zenodo.org/badge/913827732.svg)](https://doi.org/10.5281/zenodo.15124197) [![video recording](https://img.shields.io/badge/Video%20Recording-373b38?logo=youtube)](https://media.ccc.de/v/fossgis2025-58287-airborne-laserscanning-in-deutschland-verfugbarkeiten-herausforderungen-potenziale)  [![presentation slides](https://img.shields.io/badge/Presentation%20Slides-373b38?logo=revealdotjs&logoColor=white)](https://wiesehahn.github.io/presentation-fossgis25/presentation.html)
 
 
 #### Abstract
